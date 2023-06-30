@@ -1,6 +1,4 @@
 import { useState } from "react";
-import close from "../assets/close.svg";
-import menu from "../assets/menu.svg";
 const Navbar = () => {
   const navLinks = [
     { path: "/", label: ".is()" },
@@ -10,7 +8,6 @@ const Navbar = () => {
     { path: "/contacts", label: ".Contact()" },
     { path: "/articles", label: ".Articles()" }
   ];
-  const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -33,7 +30,7 @@ const Navbar = () => {
       {/* small devices  */}
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <img
-          src={toggle ? close : menu}
+          src={toggle ? `/close.svg` : `/menu.svg`}
           alt="menu"
           className="w-[28px] h-[28px] object-contain"
           onClick={() => setToggle((prev) => !prev)}
@@ -49,11 +46,12 @@ const Navbar = () => {
               <li
                 key={nav.id}
                 className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                  active === nav.title ? "text-white" : "text-dimWhite"
-                } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                onClick={() => setActive(nav.title)}
+                  index === nav.label ? "text-white" : "text-dimWhite"
+                } ${
+                  index === navLinks.length - 1 ? "mr-0" : "mb-4"
+                } text-white`}
               >
-                <a href={`#${nav.id}`}>{nav.title}</a>
+                <a>{nav.label}</a>
               </li>
             ))}
           </ul>
