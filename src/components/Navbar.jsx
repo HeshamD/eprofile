@@ -8,6 +8,7 @@ const Navbar = () => {
     { path: "/contacts", label: ".Contact()" },
     { path: "/articles", label: ".Articles()" }
   ];
+  const [active, setActive] = useState(".is()");
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -19,8 +20,9 @@ const Navbar = () => {
           <li
             key={index}
             className={`font-poppins font-normal cursor-pointer text-[16px] ${
-              index === navLinks.length - 1 ? "mr-0" : "mr10"
-            } text-white mr-10`}
+              active === nav.label ? "text-white" : "text-dimWhite"
+            } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
+            onClick={() => setActive(nav.label)}
           >
             <a>{nav.label}</a>
           </li>
@@ -33,23 +35,22 @@ const Navbar = () => {
           src={toggle ? `/close.svg` : `/menu.svg`}
           alt="menu"
           className="w-[28px] h-[28px] object-contain"
-          onClick={() => setToggle((prev) => !prev)}
+          onClick={() => setToggle(!toggle)}
         />
         {/* drop down menu */}
         <div
           className={`${
-            !toggle ? "flex" : "hidden"
+            !toggle ? "hidden" : "flex"
           } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
         >
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
             {navLinks.map((nav, index) => (
               <li
-                key={nav.id}
+                key={index}
                 className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                  index === nav.label ? "text-white" : "text-dimWhite"
-                } ${
-                  index === navLinks.length - 1 ? "mr-0" : "mb-4"
-                } text-white`}
+                  active === nav.label ? "text-white" : "text-dimWhite"
+                } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
+                onClick={() => setActive(nav.label)}
               >
                 <a>{nav.label}</a>
               </li>
