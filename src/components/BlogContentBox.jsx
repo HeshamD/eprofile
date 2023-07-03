@@ -38,6 +38,14 @@ const BlogContentBox = ({ blogData, title, content }) => {
               className={`${styles.paragraph} text-left max-w-[450px]}`}
               dangerouslySetInnerHTML={{ __html: blog.content }}
             ></p>
+            <div className="mt-4">
+              <a
+                href={blog.link}
+                className="inline-block px-4 py-2 bg-blue-500 hover:bg-blue-600 hover:cursor-pointer  text-white rounded-md"
+              >
+                Read More
+              </a>
+            </div>
           </div>
         </div>
       ))}
