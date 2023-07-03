@@ -6,24 +6,16 @@ const Footer = () => {
       title: "Useful Links",
       links: [
         {
-          name: "Content",
+          name: "Projects",
           link: "https://www.hoobank.com/content/"
         },
         {
-          name: "How it Works",
-          link: "https://www.hoobank.com/how-it-works/"
+          name: "Work Experience",
+          link: "https://www.hoobank.com/content/"
         },
         {
-          name: "Create",
-          link: "https://www.hoobank.com/create/"
-        },
-        {
-          name: "Explore",
-          link: "https://www.hoobank.com/explore/"
-        },
-        {
-          name: "Terms & Services",
-          link: "https://www.hoobank.com/terms-and-services/"
+          name: "Degrees",
+          link: "https://www.hoobank.com/content/"
         }
       ]
     },
@@ -31,37 +23,21 @@ const Footer = () => {
       title: "Community",
       links: [
         {
-          name: "Help Center",
-          link: "https://www.hoobank.com/help-center/"
-        },
-        {
-          name: "Partners",
-          link: "https://www.hoobank.com/partners/"
-        },
-        {
-          name: "Suggestions",
-          link: "https://www.hoobank.com/suggestions/"
-        },
-        {
-          name: "Blog",
+          name: "Blogs",
           link: "https://www.hoobank.com/blog/"
         },
         {
-          name: "Newsletters",
-          link: "https://www.hoobank.com/newsletters/"
+          name: "Awards",
+          link: "https://www.hoobank.com/content/"
         }
       ]
     },
     {
-      title: "Partner",
+      title: "Social Media",
       links: [
         {
-          name: "Our Partner",
-          link: "https://www.hoobank.com/our-partner/"
-        },
-        {
-          name: "Become a Partner",
-          link: "https://www.hoobank.com/become-a-partner/"
+          name: "Contacts",
+          link: "https://www.hoobank.com/create/"
         }
       ]
     }
@@ -70,18 +46,31 @@ const Footer = () => {
   const socialLinks = [
     {
       name: "LinkedIn",
-      link: "https://www.linkedin.com/company/hoobank",
-      icon: <FaLinkedin />
+      link: "https://www.linkedin.com/in/hesham-eldawy/",
+      icon: (
+        <FaLinkedin className="text-white hover:text-secondary mr-4 w-6 h-6" />
+      )
     },
-    {
-      name: "YouTube",
-      link: "https://www.youtube.com/channel/hoobank",
-      icon: <FaYoutube />
-    },
+    // {
+    //   name: "YouTube",
+    //   link: "https://www.youtube.com/channel/hoobank",
+    //   icon: (
+    //     <FaYoutube className="text-white hover:text-secondary mr-4 w-6 h-6" />
+    //   )
+    // },
     {
       name: "Medium",
-      link: "https://medium.com/@hoobank",
-      icon: <FaMedium />
+      link: "https://medium.com/@heshameldawy__",
+      icon: (
+        <FaMedium className="text-white hover:text-secondary mr-4 w-6 h-6" />
+      )
+    },
+    {
+      name: "Mostaql Freelance",
+      link: "https://mostaql.com/u/PlatinumDawy",
+      icon: (
+        <img src="/mostaqle.png" alt="Mostaql Freelance" className="w-10 h-6" />
+      )
     }
   ];
 
