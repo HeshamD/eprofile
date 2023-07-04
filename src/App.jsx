@@ -5,7 +5,7 @@ import Projects from "./pages/projects/Project";
 import Experience from "./pages/experience/Experience";
 import Education from "./pages/education/Education";
 import Blog from "./pages/Blog";
-import Contact from "./pages/Contact";
+import Contact from "./pages/contact/Contact";
 function App() {
   return (
     <BrowserRouter>
