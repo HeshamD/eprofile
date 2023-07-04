@@ -1,10 +1,10 @@
 import "react-vertical-timeline-component/style.min.css";
 import styles from "../style";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 import PropTypes from "prop-types";
 
-const TimeLineContent = ({ children }) => {
+const Page = ({ children }) => {
   return (
     <div className="bg-black w-full overflow-hidden">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
@@ -25,8 +25,8 @@ const TimeLineContent = ({ children }) => {
   );
 };
 
-TimeLineContent.propTypes = {
+Page.propTypes = {
   children: PropTypes.node.isRequired
 };
 
-export default TimeLineContent;
+export default Page;

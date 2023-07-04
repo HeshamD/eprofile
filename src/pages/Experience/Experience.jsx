@@ -1,10 +1,10 @@
+import Page from "../../components/page";
 import ExperienceContent from "./ExperienceContent";
-import TimeLineContent from "../../components/TimeLineContent";
 const Experience = () => {
   return (
-    <TimeLineContent>
+    <Page>
       <ExperienceContent />
-    </TimeLineContent>
+    </Page>
   );
 };
 

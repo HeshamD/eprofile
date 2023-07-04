@@ -1,9 +1,9 @@
 import "./App.css";
 import Home from "./pages/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Projects from "./pages/Projects";
-import Experience from "./pages/Experience/Experience";
-import Education from "./pages/Education/Education";
+import Projects from "./pages/projects/Project";
+import Experience from "./pages/experience/Experience";
+import Education from "./pages/education/Education";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 function App() {

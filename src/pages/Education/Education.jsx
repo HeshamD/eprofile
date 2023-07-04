@@ -1,11 +1,11 @@
-import TimeLineContent from "../../components/TimeLineContent";
+import Page from "../../components/page";
 import EducationContent from "./EducationContent";
 
 const Education = () => {
   return (
-    <TimeLineContent>
+    <Page>
       <EducationContent />
-    </TimeLineContent>
+    </Page>
   );
 };
 
