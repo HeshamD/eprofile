@@ -18,7 +18,7 @@ const BlogContentBox = ({ blogData, title, content }) => {
       {blogData.map((blog, index) => (
         <div
           key={index}
-          className="w-full flex flex-col md:flex-row sm:mb-16 mb-6 relative z-[1]"
+          className="w-full flex flex-col md:flex-row sm:mb-16 mb-6 relative z-[1] "
         >
           <div className="w-full md:w-1/3">
             <div className={`${styles.imageContainer} ${styles.imageEffect}`}>
