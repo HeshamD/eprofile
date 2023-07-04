@@ -7,7 +7,7 @@ import ContentBox from "../components/contentBox";
 import BlogContentBox from "../components/BlogContentBox";
 import { blogData } from "../consts/homePage/blogsContent";
 import { projectsCardInfo } from "../consts/homePage/projectsContent";
-const HomePage = () => {
+const Home = () => {
   const stats = [{ title: "Years of Experience", value: "4+" }];
   return (
     <div className="bg-black w-full overflow-hidden">
@@ -45,4 +45,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Home;

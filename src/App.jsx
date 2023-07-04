@@ -1,17 +1,21 @@
 import "./App.css";
-import HomePage from "./pages/HomePage";
+import Home from "./pages/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
+import Projects from "./pages/Projects";
+import Experience from "./pages/Experience/Experience";
+import Education from "./pages/Education";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index element={<HomePage />} />
-        {/* <Route path="/projects" element={<ProjectModel />} />
-        <Route path="/contacts" element={<ContactModel />} />
+        <Route index element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contacts" element={<Contact />} />
         <Route path="/work_Experience" element={<Experience />} />
         <Route path="/education" element={<Education />} />
-        <Route path="/articles" element={<Blog />} /> */}
+        <Route path="/articles" element={<Blog />} />
       </Routes>
     </BrowserRouter>
   );

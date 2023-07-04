@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const navLinks = [
     { path: "/", label: ".is()" },
@@ -24,7 +25,7 @@ const Navbar = () => {
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.label)}
           >
-            <a>{nav.label}</a>
+            <Link to={nav.path}>{nav.label}</Link>
           </li>
         ))}
       </ul>
@@ -52,7 +53,7 @@ const Navbar = () => {
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.label)}
               >
-                <a>{nav.label}</a>
+                <Link to={nav.path}>{nav.label}</Link>
               </li>
             ))}
           </ul>
