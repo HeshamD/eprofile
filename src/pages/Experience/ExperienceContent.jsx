@@ -8,7 +8,7 @@ import {
 } from "react-vertical-timeline-component";
 import { textVariant } from "../../utils/motion";
 import { styles } from "../../utils/styles";
-import { experiences } from "../../consts/experience/experience";
+import { experiences } from "../../consts/experience";
 const ExperienceCard = ({ experiences }) => {
   const { title, company_name, date, iconBg, icon, points } = experiences;
 
