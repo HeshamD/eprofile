@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+
 const Navbar = () => {
   const navLinks = [
     { path: "/", label: ".is()" },
@@ -9,7 +10,8 @@ const Navbar = () => {
     { path: "/contacts", label: ".Contact()" },
     { path: "/articles", label: ".Articles()" }
   ];
-  const [active, setActive] = useState(".is()");
+  const location = useLocation(); // Get the current location
+
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -21,9 +23,8 @@ const Navbar = () => {
           <li
             key={index}
             className={`font-poppins font-normal cursor-pointer text-[16px] ${
-              active === nav.label ? "text-white" : "text-dimWhite"
+              location.pathname === nav.path ? "text-white" : "text-dimWhite"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
-            onClick={() => setActive(nav.label)}
           >
             <Link to={nav.path}>{nav.label}</Link>
           </li>
@@ -33,7 +34,7 @@ const Navbar = () => {
       {/* small devices  */}
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <img
-          src={toggle ? `/close.svg` : `/menu.svg`}
+          src={toggle ? "/close.svg" : "/menu.svg"}
           alt="menu"
           className="w-[28px] h-[28px] object-contain"
           onClick={() => setToggle(!toggle)}
@@ -49,9 +50,10 @@ const Navbar = () => {
               <li
                 key={index}
                 className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                  active === nav.label ? "text-white" : "text-dimWhite"
+                  location.pathname === nav.path
+                    ? "text-white"
+                    : "text-dimWhite"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                onClick={() => setActive(nav.label)}
               >
                 <Link to={nav.path}>{nav.label}</Link>
               </li>
