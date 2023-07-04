@@ -7,15 +7,15 @@ const Footer = () => {
       links: [
         {
           name: "Projects",
-          link: "https://www.hoobank.com/content/"
+          link: "/projects"
         },
         {
           name: "Work Experience",
-          link: "https://www.hoobank.com/content/"
+          link: "/work_Experience"
         },
         {
           name: "Degrees",
-          link: "https://www.hoobank.com/content/"
+          link: "/education"
         }
       ]
     },
@@ -24,7 +24,7 @@ const Footer = () => {
       links: [
         {
           name: "Blogs",
-          link: "https://www.hoobank.com/blog/"
+          link: "/articles"
         },
         {
           name: "Awards",
@@ -37,7 +37,7 @@ const Footer = () => {
       links: [
         {
           name: "Contacts",
-          link: "https://www.hoobank.com/create/"
+          link: "/contacts"
         }
       ]
     }
@@ -106,7 +106,7 @@ const Footer = () => {
                       index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
                     }`}
                   >
-                    {link.name}
+                    <a href={link.link}>{link.name}</a>
                   </li>
                 ))}
               </ul>
