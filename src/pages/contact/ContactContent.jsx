@@ -25,7 +25,7 @@ const ContactContent = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:3000/contacts", {
+      const response = await fetch("/contacts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
