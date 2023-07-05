@@ -25,7 +25,7 @@ const ContactContent = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("/contacts", {
+      const response = await fetch("http://localhost:3000/contacts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -51,7 +51,7 @@ const ContactContent = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden bg-black-gradient-2 rounded-xl`}
+      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden bg-black-gradient-2 rounded-xl md:mx-16 md:mt-10`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}

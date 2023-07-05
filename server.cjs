@@ -14,19 +14,18 @@ app.use("/", router);
 
 router.post("/contacts", (req, res) => {
   const { name, email, message } = req.body;
-
   // Use nodemailer to send the email
   const transporter = nodemailer.createTransport({
-    service: "Gmail",
+    service: "hotmail",
     auth: {
-      user: "your_email@gmail.com",
-      pass: "your_password"
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASSWORD
     }
   });
 
   const mailOptions = {
-    from: email,
-    to: "your_recipient_email@example.com",
+    from: process.env.EMAIL_USER,
+    to: process.env.EMAIL_USER,
     subject: "New Contact Form Submission",
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
   };
