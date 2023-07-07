@@ -5,7 +5,8 @@ export const projects = [
       "Translation Office is a Web Application created using the React.js framework for the frontend and Node.js for the backend. This project aims to provide a platform where users can easily translate their documents into different languages, which are certified translations.",
     tools: ["Javascript", "React.js", "Html", "CSS", "Node.js"],
     image: "projectsImgs/AIsummrizer.png",
-    githubLink: "https://github.com/your-github-link"
+    githubLink: "https://github.com/your-github-link",
+    link: "https://platinumsummrizer.netlify.app"
   },
   {
     title: "Expense Tracker",
@@ -22,6 +23,7 @@ export const projects = [
       "Express.js"
     ],
     image: "projectsImgs/carDealer.png",
-    githubLink: "https://github.com/your-github-link"
+    githubLink: "https://github.com/your-github-link",
+    link: "https://cardealership-platinumdawy.netlify.app"
   }
 ];

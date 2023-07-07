@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { projects } from "../../consts/projects";
 import { FaGithub } from "react-icons/fa";
 import styles from "../../style";
+import { FaLink } from "react-icons/fa";
 
 const Projects = () => {
   const projectRefs = useRef([]);
@@ -74,6 +75,19 @@ const Projects = () => {
                   >
                     <FaGithub className="mr-2 w-5 h-5" />
                     GitHub
+                  </a>
+                </div>
+              )}
+              {project.link && (
+                <div className="mt-4">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center text-lg text-white hover:text-gray-300"
+                  >
+                    <FaLink className="inline-block mr-1 mb-1" />
+                    View More
                   </a>
                 </div>
               )}

@@ -4,13 +4,15 @@ export const projectsCardInfo = [
       Connecting with AI API for summarizing the articles.
       Using Redux to connect to the API and to get specific data from the call`,
     title: "AI Summrizer",
-    img: "/projectsImgs/AIsummrizer.png"
+    img: "/projectsImgs/AIsummrizer.png",
+    link: "https://platinumsummrizer.netlify.app"
   },
   {
     content:
       "This is a full stack application where the vehicles information been loaded from an API to show all the cars with a search bar.",
     title: "Car dealership",
-    img: "/projectsImgs/carDealer.png"
+    img: "/projectsImgs/carDealer.png",
+    link: "https://cardealership-platinumdawy.netlify.app"
   }
   // Add more card objects as needed
 ];
