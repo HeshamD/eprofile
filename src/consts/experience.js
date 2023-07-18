@@ -18,7 +18,7 @@ export const experiences = [
     ]
   },
   {
-    title: "Software Engieer",
+    title: "Software Engineer",
     company_name: "CME Group",
     icon: {
       src: "/experiencePageImgs/CME_GROUP.png",

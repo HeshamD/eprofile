@@ -68,5 +68,60 @@ export const blogs = [
     header: "UML Diagrams",
     image:
       "https://i.pinimg.com/originals/d3/7b/e2/d37be2d75ccba16df8319a937c76da5d.png"
+  },
+  {
+    content: `<ul>
+    <li>Definition</li>
+    <li>Applications on heaps</li>
+    <li>Implementing Heaps</li>
+    <li>Exerciese</li>
+    </ul>`,
+    header: "Heaps in Explain",
+    image:
+      "https://i.pinimg.com/originals/d3/7b/e2/d37be2d75ccba16df8319a937c76da5d.png"
+  },
+  {
+    content: `<ul>
+    <li>Definition</li>
+    <li>Applications on Sets</li>
+    <li>Implementing Sets</li>
+    <li>Exerciese</li>
+    </ul>`,
+    header: "Sets in Explain",
+    image:
+      "https://i.pinimg.com/originals/d3/7b/e2/d37be2d75ccba16df8319a937c76da5d.png"
+  },
+  {
+    content: `<ul>
+    <li>Definition</li>
+    <li>Applications on Queues</li>
+    <li>Implementing Queues</li>
+    <li>Exerciese</li>
+    </ul>`,
+    header: "Queues in Explain",
+    image:
+      "https://i.pinimg.com/originals/d3/7b/e2/d37be2d75ccba16df8319a937c76da5d.png"
+  },
+  {
+    content: `<ul>
+    <li>Definition</li>
+    <li>Applications on Bucket Sort</li>
+    <li>Implementing Bucket Sort</li>
+    <li>Exerciese</li>
+    </ul>`,
+    header: "Bucket Sort",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Bucket_sort_1.svg/640px-Bucket_sort_1.svg.png"
+  },
+  {
+    content: `<ul>
+    <li>Definition</li>
+    <li>Applications on Bucket Sort</li>
+    <li>Implementing Bucket Sort</li>
+    <li>Exerciese</li>
+    </ul>`,
+    header: "Kadane's Algorithnms",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Bucket_sort_1.svg/640px-Bucket_sort_1.svg.png"
   }
 ];
