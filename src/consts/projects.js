@@ -1,17 +1,17 @@
 export const projects = [
   {
-    title: "Translation Office Services",
+    title: "Sumz AI",
     description:
-      "Translation Office is a Web Application created using the React.js framework for the frontend and Node.js for the backend. This project aims to provide a platform where users can easily translate their documents into different languages, which are certified translations.",
+      "The application to summarize articles by pasting the url in the input form",
     tools: ["Javascript", "React.js", "Html", "CSS", "Node.js"],
     image: "projectsImgs/AIsummrizer.png",
-    githubLink: "https://github.com/your-github-link",
+    githubLink: "https://github.com/HeshamD/ai_summarizer",
     link: "https://platinumsummrizer.netlify.app"
   },
   {
-    title: "Expense Tracker",
+    title: "Car Dealership landing page",
     description:
-      "Create an expense tracking application that allows users to record and categorize their expenses, set budgets, and generate expense reports. Include features like expense visualization, reminders, and data synchronization across devices.",
+      "The landing page is to represent the car dealership with an amazing design to catch attention",
     tools: [
       "JS",
       "TS",
@@ -23,7 +23,7 @@ export const projects = [
       "Express.js"
     ],
     image: "projectsImgs/carDealer.png",
-    githubLink: "https://github.com/your-github-link",
+    githubLink: "https://github.com/HeshamD/car_showcase",
     link: "https://cardealership-platinumdawy.netlify.app"
   }
 ];

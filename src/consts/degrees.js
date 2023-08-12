@@ -1,7 +1,7 @@
 export const degrees = [
   {
-    collegeName: "Online Sources",
-    description: `Online Courses`,
+    collegeName: "Online Sources & Self Study",
+    description: `Online Courses & Self Study`,
     icon: "",
     iconBg: "#383E54",
     date: "2017 - Present",
