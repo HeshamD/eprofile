@@ -35,7 +35,7 @@ const Home = () => {
           <BlogContentBox
             blogData={blogData}
             title="Recent Blogs"
-            content="These projects list is in update from time to time due to working on
+            content="These blogs list is in update from time to time due to working on
             different projects"
           />
           <Footer />
